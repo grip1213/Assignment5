@@ -65,25 +65,6 @@ app.get('/items/:id', (req, res)=> {
     
 });
 
-/*
-app.post('/items', (req, res)=> {
-    console.log(req.body)
-    const item = req.body
-    saledb.create(item,(error,result)=>{
-        if(error){
-            console.log(error)
-            res.send('ERROR INSERTING ENTRY!!!')
-        }
-            
-        else{
-            console.log(result)
-            res.send(item)
-        }
-            
-    })
-    
-});*/
-
 app.post('/items',(req,res)=>{
     const item = req.body
     saledb.create(item,(error,result)=>{
