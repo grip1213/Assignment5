@@ -1,0 +1,26 @@
+<!doctype HTML>
+<html>
+  <head>
+    <style>
+      .blink{
+        animation: blinker 1.5s linear infinite;
+      }
+
+      @keyframes blinker {50% {opacity: 0;}}
+
+    </style>
+    <title>
+      ERROR 404 PAGE NOT FOUND
+    </title>
+  </head>
+  <div style='position:relative; min-height:90vh; padding-bottom: 2.5em;'>
+    <body>
+        {{>header}}
+        <div style='text-align:center; margin:auto;'>
+          <img class='blink' style='width:25%; height:20%;' src='error.png'>
+        </div>
+        <p class='blink' style='text-align:center; margin:auto; padding:5%; font-size:400%; color:darkred; text-shadow:2px 2px darkslategrey'>This page does not exist please retry!!!</p>
+        {{>footer}}
+    </body>
+  </div>
+  </html>
