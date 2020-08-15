@@ -145,7 +145,7 @@ deleteBTN.addEventListener('submit',(e)=>{
 
     const id = document.getElementById('IDToDelete').value
 
-    fetch('http://localhost:3000/items/' + id, {
+    fetch('/items/' + id, {
         method: 'DELETE',
         headers: {'Content-Type': 'application/json',},
         })
