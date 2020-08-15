@@ -123,7 +123,7 @@ inputForm.addEventListener('submit',(e)=>{
         "contact": contact.value
     }
 
-    fetch('http://localhost:3000/items', {
+    fetch('/items', {
         method: 'POST',
         headers: {'Content-Type': 'application/json',},
         body: JSON.stringify(post_request_object),
